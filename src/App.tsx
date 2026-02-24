@@ -20,23 +20,36 @@ function App() {
       <main id="main-content">
         <section id="hakkimda">
           <h2>Hakkimda</h2>
+          <figure>
+            <img src="/profil.jpg" alt="Samet Altuner'in vesikalik fotografi" />
+            <figcaption>Samet Altuner</figcaption>
+          </figure>
           <p>Merhaba, ben Samet Altuner. Yazilim Muhendisligi ogrencisiyim.</p>
+          <ul>
+            <li>Flutter</li>
+            <li>Java</li>
+            <li>React / TypeScript</li>
+            <li>HTML5 / CSS3</li>
+          </ul>
         </section>
 
         <section id="projeler">
           <h2>Projelerim</h2>
           <article>
             <h3>Ruya Tabiri</h3>
+            <img src="/ruya-tabiri.jpg" alt="Ruya Tabiri uygulamasi ana ekran goruntusu" />
             <p>Kullanicilarin ruyalarini yorumlatan kapsamli bir mobil uygulama.</p>
             <p><strong>Kullanilan Teknoloji:</strong> Flutter</p>
           </article>
           <article>
             <h3>Mobil Proexpert</h3>
+            <img src="/proexpert.jpg" alt="Mobil Proexpert uygulamasi ana ekran goruntusu" />
             <p>Uzmanlari ve danisanlari bir araya getiren mobil danismanlik platformu.</p>
             <p><strong>Kullanilan Teknoloji:</strong> Java</p>
           </article>
           <article>
             <h3>Akademik Icerik Sistemi</h3>
+            <img src="/akademik.jpg" alt="Akademik Icerik Sistemi web sayfasi ekran goruntusu" />
             <p>Akademisyenlerin makale ve iceriklerini yonetebildigi bir sistem.</p>
             <p><strong>Kullanilan Teknoloji:</strong> Java</p>
           </article>
@@ -97,6 +110,10 @@ function App() {
 
       <footer>
         <p>&copy; 2025 Samet Altuner. Tum haklari saklidir.</p>
+        <p>
+          <a href="https://github.com/SametAltuner" target="_blank" rel="noopener noreferrer">GitHub</a> |
+          <a href="https://www.linkedin.com/in/samet-altuner-910712294" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
       </footer>
     </>
   )
