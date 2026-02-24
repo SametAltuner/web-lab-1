@@ -7,7 +7,7 @@ function App() {
         Ana icerige atla
       </a>
       <header>
-        <h1>Samet Altuner - Kisisel Portfolyo</h1>
+        <h1>Samet Altuner - Kişisel Portföy</h1>
         <nav aria-label="Ana navigasyon">
           <ul>
             <li><a href="#hakkimda">Hakkimda</a></li>
@@ -42,15 +42,9 @@ function App() {
             <p><strong>Kullanilan Teknoloji:</strong> Flutter</p>
           </article>
           <article>
-            <h3>Mobil Proexpert</h3>
-            <img src="/proexpert.jpg" alt="Mobil Proexpert uygulamasi ana ekran goruntusu" />
-            <p>Uzmanlari ve danisanlari bir araya getiren mobil danismanlik platformu.</p>
-            <p><strong>Kullanilan Teknoloji:</strong> Java</p>
-          </article>
-          <article>
             <h3>Akademik Icerik Sistemi</h3>
-            <img src="/akademik.jpg" alt="Akademik Icerik Sistemi web sayfasi ekran goruntusu" />
-            <p>Akademisyenlerin makale ve iceriklerini yonetebildigi bir sistem.</p>
+            <img src="/proexpert.png" alt="Proexpert Akademik Icerik Sistemi ekran goruntusu" />
+            <p>Makale, bildiri, kitap ve proje gibi akademik iceriklerin listelendigi ve yonetilebildigi bir platform.</p>
             <p><strong>Kullanilan Teknoloji:</strong> Java</p>
           </article>
         </section>
