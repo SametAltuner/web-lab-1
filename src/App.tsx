@@ -20,33 +20,43 @@ function App() {
       <main id="main-content">
         <section id="hakkimda">
           <h2>Hakkimda</h2>
-          <figure>
-            <img src="/profil.jpg" alt="Samet Altuner'in vesikalik fotografi" width="150" height="150" />
-            <figcaption>Samet Altuner</figcaption>
-          </figure>
-          <p>Merhaba, ben Samet Altuner. Yazilim Muhendisligi ogrencisiyim.</p>
-          <ul>
-            <li>Flutter</li>
-            <li>Java-Spring Boot</li>
-            <li>  javascript</li>
-            <li>HTML / CSS</li>
-          </ul>
+          <div className="about-content">
+            <figure>
+              <img src="/profil.jpg" alt="Samet Altuner'in vesikalik fotografi" width="150" height="150" />
+              <figcaption>Samet Altuner</figcaption>
+            </figure>
+            <div>
+              <p>Merhaba, ben Samet Altuner. Yazilim Muhendisligi ogrencisiyim.</p>
+              <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+                <li>Flutter</li>
+                <li>Java-Spring Boot</li>
+                <li>Javascript</li>
+                <li>HTML / CSS</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section id="projeler">
           <h2>Projelerim</h2>
-          <article>
-            <h3>Ruya Tabiri</h3>
-            <img src="/ruya-tabiri.jpg" alt="Ruya Tabiri uygulamasi ana ekran goruntusu" width="800" height="400" loading="lazy" />
-            <p>Kullanicilarin ruyalarini yorumlatan kapsamli bir mobil uygulama.</p>
-            <p><strong>Kullanilan Teknoloji:</strong> Flutter</p>
-          </article>
-          <article>
-            <h3>Akademik Icerik Sistemi</h3>
-            <img src="/proexpert.png" alt="Proexpert Akademik Icerik Sistemi ekran goruntusu" width="800" height="400" loading="lazy" />
-            <p>Makale, bildiri, kitap ve proje gibi akademik iceriklerin listelendigi ve yonetilebildigi bir platform.</p>
-            <p><strong>Kullanilan Teknoloji:</strong> Java-Spring Boot</p>
-          </article>
+          <div className="project-grid">
+            <article className="project-card">
+              <img src="/ruya-tabiri.jpg" alt="Ruya Tabiri uygulamasi ana ekran goruntusu" width="800" height="400" loading="lazy" />
+              <h3>Ruya Tabiri</h3>
+              <p>Kullanicilarin ruyalarini yorumlatan kapsamli bir mobil uygulama.</p>
+              <ul className="skill-tags">
+                <li>Flutter</li>
+              </ul>
+            </article>
+            <article className="project-card">
+              <img src="/proexpert.png" alt="Proexpert Akademik Icerik Sistemi ekran goruntusu" width="800" height="400" loading="lazy" />
+              <h3>Akademik Icerik Sistemi</h3>
+              <p>Makale, bildiri, kitap ve proje gibi akademik iceriklerin listelendigi ve yonetilebildigi bir platform.</p>
+              <ul className="skill-tags">
+                <li>Java-Spring Boot</li>
+              </ul>
+            </article>
+          </div>
         </section>
 
         <section id="iletisim">
