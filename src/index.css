@@ -1,139 +1,26 @@
-@import './styles/tokens.css';
+@import "tailwindcss";
 
-/* Genel sifirlama */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@theme {
+  --color-primary: #1E3A8A;
+  --color-secondary: #2563EB;
+  --color-accent: #7C3AED;
+  --color-surface: #F9FAFB;
+  --color-muted: #6B7280;
+  --color-error: #DC2626;
+  --color-success: #16A34A;
+
+  --font-family-sans: system-ui, -apple-system, sans-serif;
+  --font-family-mono: 'Fira Code', 'Consolas', monospace;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Temel scroll ve smooth */
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: var(--font-sans);
-  font-size: var(--text-base);
-  line-height: 1.6;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  /* Sifirlanacak olan paddingler vs, responsive kisimda yapilandirilacak */
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Skip link: normalde gizli, Tab ile gorunur */
+/* Skip link erişilebilirlik */
 .skip-link {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  background: var(--color-primary);
-  color: #fff;
-  padding: var(--space-sm) var(--space-md);
-  z-index: 100;
-  border-radius: var(--radius-sm);
-}
-
-.skip-link:focus {
-  top: 0;
-}
-
-/* Focus gostergesi -- ASLA kaldirma */
-:focus {
-  outline: 2px solid var(--color-secondary);
-  outline-offset: 2px;
-}
-
-/* Form stilleri */
-.form-group {
-  margin-bottom: var(--space-md);
-}
-
-label {
-  display: block;
-  margin-bottom: var(--space-xs);
-  font-weight: 600;
-}
-
-input,
-textarea,
-select {
-  width: 100%;
-  padding: var(--space-sm) var(--space-md);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: var(--color-surface);
-  color: inherit;
-  font-family: inherit;
-  font-size: var(--text-base);
-  transition: border-color var(--transition-fast);
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: var(--color-primary);
-  outline: 2px solid var(--color-secondary);
-  outline-offset: 2px;
-}
-
-.error-msg {
-  color: var(--color-error);
-  font-size: var(--text-sm);
-}
-
-select option {
-  background: var(--color-bg);
-  color: var(--color-text);
-}
-
-a {
-  font-weight: 500;
-  color: var(--color-secondary);
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-a:hover {
-  color: var(--color-primary);
-}
-
-h1 {
-  font-size: var(--text-3xl);
-  line-height: 1.1;
-  margin-bottom: var(--space-md);
-}
-
-h2 {
-  font-size: var(--text-2xl);
-  margin-top: var(--space-xl);
-  margin-bottom: var(--space-lg);
-  color: var(--color-primary);
-}
-
-h3 {
-  font-size: var(--text-xl);
-}
-
-button {
-  border-radius: var(--radius-md);
-  border: none;
-  padding: var(--space-sm) var(--space-lg);
-  font-size: var(--text-base);
-  font-weight: 600;
-  font-family: inherit;
-  background-color: var(--color-primary);
-  color: #ffffff;
-  cursor: pointer;
-  transition: background-color var(--transition-fast);
-}
-
-button:hover {
-  background-color: var(--color-secondary);
+  @apply sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-blue-800 focus:text-white focus:p-2;
 }
