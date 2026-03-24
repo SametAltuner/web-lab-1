@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "title": "Ruya Tabiri",
+    "description": "Kullanicilarin ruyalarini yorumlatan kapsamli bir mobil uygulama.",
+    "tech": ["Flutter"],
+    "year": 2024,
+    "category": "frontend",
+    "featured": true,
+    "image": "/ruya-tabiri.jpg",
+    "sourceUrl": "https://github.com/SametAltuner"
+  },
+  {
+    "id": 2,
+    "title": "Akademik Icerik Sistemi",
+    "description": "Makale, bildiri, kitap ve proje gibi akademik iceriklerin listelendigi ve yonetilebildigi bir platform.",
+    "tech": ["Java", "Spring Boot", "MySQL", "Thymeleaf"],
+    "year": 2024,
+    "category": "fullstack",
+    "featured": true,
+    "image": "/proexpert.png",
+    "sourceUrl": "https://github.com/SametAltuner"
+  },
+  {
+    "id": 3,
+    "title": "Portfolyo Web Sitesi",
+    "description": "React ve TypeScript ile gelistirilmis kisisel portfolyo sayfasi. Responsive tasarim ve modern CSS destekli.",
+    "tech": ["React", "TypeScript", "Vite", "CSS"],
+    "year": 2025,
+    "category": "frontend",
+    "featured": true,
+    "image": "/proexpert.png",
+    "sourceUrl": "https://github.com/SametAltuner"
+  },
+  {
+    "id": 4,
+    "title": "Mevzuat Yonetim Sistemi",
+    "description": "Basvuru, hibe butce yonetimi, kota planlama ve dinamik dokuman uretimi (PDF, Excel) surecleri icerir.",
+    "tech": ["Java", "Spring Boot", "MySQL", "CAS", "REST API"],
+    "year": 2024,
+    "category": "fullstack",
+    "featured": false,
+    "image": "/proexpert.png",
+    "sourceUrl": "https://github.com/SametAltuner"
+  },
+  {
+    "id": 5,
+    "title": "Hava Durumu Uygulamasi",
+    "description": "REST API entegrasyonu ile anlik hava durumu sorgulayan JavaScript uygulamasi.",
+    "tech": ["JavaScript", "REST API", "HTML", "CSS"],
+    "year": 2023,
+    "category": "frontend",
+    "featured": false,
+    "image": "/ruya-tabiri.jpg",
+    "demoUrl": "https://github.com/SametAltuner"
+  }
+]
+
+
